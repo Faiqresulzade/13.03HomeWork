@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script defer src="./assets/js/slide.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="wrapper">
+        <header>
+            <div class="container row">
+              <a href="#" class="logo"><img style="width: 10%; margin-right: 20px;" src="./assets/img/movio symvol.png" alt="">FilmStation</a>
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+                <ul class="nav__list">
+                  <li class="nav__item"><a href="#" class="nav__link">Sign in</a></li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link nav__link--button">Sign up</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+          <div class="movieSlide">
+            <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/wanaka-tree.jpg">
+            <div style="background-color: #033b47; font-size: 40px;">
+                The best movie ever
+            </div>
+            <div style="height: 750px;" id="carousel">
+              <figure class="spinner" id="spinner">
+                <!-- <img src="wanaka-tree.jpg" alt>
+                <img src="still-lake.jpg" alt>
+                <img src="pink-milford-sound.jpg" alt>
+                <img src="paradise.jpg" alt>
+                <img src="morekai.jpg" alt>
+                <img src="milky-blue-lagoon.jpg" alt>
+                <img src="lake-tekapo.jpg" alt>
+                <img src="milford-sound.jpg" alt> -->
+              </figure>
+            </div>
+            <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+            <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+          </div>
+      <div class="AllMovie">
+            <h1>All Movie</h1>
+            <!-- <div class="flip">
+                <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                  <h1 class="text-shadow">MOUNTAIN</hi>
+                </div>
+                <div class="back">
+                  <h2>Angular</h2>
+                  <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                </div>
+            </div>
+            <div class="flip">
+                <div class="front" style="background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                  <h1 class="text-shadow">LAKE</hi>
+                </div>
+                <div class="back">
+                  <h2>Angular</h2>
+                  <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                </div>
+            </div>
+            <div class="flip">
+                <div class="front" style="background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                  <h1 class="text-shadow">OCEAN</hi>
+                </div>
+                <div class="back">
+                  <h2>Angular</h2>
+                  <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                </div>
+            </div> -->
+    </div>
+
+ <!-- Footer -->
+<footer style="background-color: #333333;" class="bg-light text-center ">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+  
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Movie</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-dark">Drama</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Romantic</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Thriller</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Science-Fiction</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Our Employees</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="https://www.netflix.com/" class="text-dark">Netflix</a>
+              </li>
+              <li>
+                <a href="https://www.fullhdfilmizlesene.pro/" class="text-dark">FulHdFilmİzlesene</a>
+              </li>
+              <li>
+                <a href="https://www.hdfilmcehennemi.life/" class="text-dark">Film Cehennemi</a>
+              </li>
+              <li>
+                <a href="https://hdfilmhit.org/" class="text-dark">HdFilmHit</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Contact Us</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-dark">Phone</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Gmail</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Instagram</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Facebook</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+  
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">FilmStation.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+    </section>
+</body>
+</html>
