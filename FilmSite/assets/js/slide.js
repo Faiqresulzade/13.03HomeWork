@@ -11,8 +11,8 @@ fetch("https://api.tvmaze.com/show")
 
 let bestMovie=document.getElementById("spinner");
 let allMovie=document.querySelector(".AllMovie")
-
-console.log(bestMovie);
+let btn_seeMore=document.querySelector("#btn-seeMore")
+//console.log(bestMovie);
 
 function BestMovie(arr) {
     AllMovio(arr);
@@ -33,7 +33,34 @@ allMovie.innerHTML+=`
                 <div class="back">
                   <h2>${arr[i].genres[0]}</h2>
                   ${arr[i].summary}
+                  <a class="btn btn-primary" href="details.html?id=${arr[i].id}">See More </a> 
                 </div>
             </div>`
     }
 }
+//btn_seeMore.addEventListener("click",)
+
+//DETAILS
+let detailsContainer=document.querySelector(".detailsContainer")
+let getId=window.location.search.slice(4)
+console.log(getId);
+fetch("https://api.tvmaze.com/shows/"+getId)
+.then((response)=>response.json()
+.then((data)=>{
+    detailsContainer.innerHTML+=`
+    <div class="fb-offset-inner">
+                    <div class="image"><img  src="${data.image.medium}" alt=""></div>
+                    <div class="content">
+                        <h2>${data.name}</h2>
+                        ${data.summary}
+                        <div class="imbdAbdGenres" style="display-flex !important">
+                            <p><b>IMDB:</b> ${data.rating.average}</p>
+                            <p><b>Genres:</b> ${data.genres[0]}</p>
+                        </div>
+                        
+                        <p><b>Language:</b>${data.language}</p>
+                    </div>
+                </div>
+    `
+}))
+//console.log(getId)
